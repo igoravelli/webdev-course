@@ -1,0 +1,96 @@
+/****** Base style ******/
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+
+
+#main-title {
+    text-align: center;
+    font-size: 1.75em;
+    margin: 40px;
+}
+
+#chicken-title {
+    background-color: lightpink;
+}
+
+#beef-title{
+    background-color: red;
+    color: white;
+}
+
+#sushi-title {
+    background-color: lightyellow;
+}
+
+.container {
+    margin: 0;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box {
+    background-color: gray;
+    border: 1px solid black;
+    margin: 15px;
+    height: auto;
+
+    /* colocando o título na quanto superior direito */
+    position: relative;
+}
+
+.box-title{
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    text-align: center;
+    font-size: 1.25em;
+    width: 40%;
+
+    /* colocando o título na quanto superior direito */
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 0;
+}
+
+p {
+    padding: 40px 15px 15px 15px;
+    font-size: 1em;
+}
+
+
+/******  Large Devices  ******/
+@media (min-width: 992px) {
+    .col-lg-3 {
+        float: left;
+        width: 33.33%;
+    }
+
+    .box {
+        height: 300px;
+    }
+}
+
+/******  Medium Devices  ******/
+@media (max-width: 991px) and (min-width: 768px) {
+    .col-md-2 {
+        float: left;
+        width: 50%;
+    }
+
+    .box {
+        height: 300px;
+    }
+
+    #lg-third-el {
+        width: 100%;
+    }
+}
+
+/******  Small Devices  ******/
+@media (max-width: 767px) {
+    /* Base style */
+}
